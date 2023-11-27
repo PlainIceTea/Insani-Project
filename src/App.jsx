@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Dashboard from "./Views/Dashboard";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Penerjemah from "./Views/Penerjemah";
 const App = () => {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -23,6 +24,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/penerjemah" element={<Penerjemah />} />
         </Routes>
     <Footer />
       </Router>
