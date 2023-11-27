@@ -1,36 +1,87 @@
-//sfc
+import logo from "./assets/images/logo.png";
 const Navbar = () => {
-    return ( 
-        <header class="absolute inset-x-0 top-0 z-50">
-            <nav class="flex items-center justify-between p-6 lg:px-8 bg-primary" aria-label="Global">
-                <div class="flex lg:flex-1">
-                    <a href="#" class="-m-1.5 p-1.5">
-                        <span class="sr-only">Insani</span>
-                        <img class="h-8 w-auto" src="assests/images/logo.png" alt="" />
-                    </a>
-                </div>
-                <div class="flex sm:hidden">
-                    <button type="button"
-                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
-                            aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="hidden sm:flex sm:gap-x-12">
-                    <a href="#" class="text-sm font-semibold leading-6 text-white">Beranda</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-white">Tentang</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-white">Layanan</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-white">Berita</a>
-                </div>
+  return (
+    <div className="navbar bg-primary text-white">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul className="text-black menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li>
+              <a>Beranda</a>
+            </li>
+            <li>
+              <a>Tentang</a>
+            </li>
+            <li>
+              <a>Layanan</a>
+              <ul className="p-2 text-black">
+                <li>
+                  <a>Informasi Fasilitas</a>
+                </li>
+                <li>
+                  <a>Rute Fasilitas</a>
+                </li>
+                <li>
+                    <a>Fasilitas Penerjemah</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>Berita</a>
+            </li>
+          </ul>
+        </div>
+        <a className="btn btn-ghost text-xl">daisyUI</a>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a>Beranda</a>
+          </li>
+          <li>
+            <a>Tentang</a>
+          </li>
+          <li>
+            <details>
+              <summary>Layanan</summary>
+              <ul className="p-2 text-black">
+              <li>
+                  <a>Informasi Fasilitas</a>
+                </li>
+                <li>
+                  <a>Rute Fasilitas</a>
+                </li>
+                <li>
+                    <a>Fasilitas Penerjemah</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a>Berita</a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-end">
 
-            </nav>
-            
-        </header>
-     );
-}
- 
+      </div>
+    </div>
+  );
+};
+
 export default Navbar;
