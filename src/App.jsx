@@ -1,14 +1,29 @@
-import { useState } from 'react'
-import './App.css';
-import Navbar from './Navbar';
-function App() {
-  const title ='INSANI';
-  return (
-    <div className="App">
-      <Navbar />
-    <h1>Test</h1>
-    </div>
-  )
-}
+import {
+  HashRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import { useEffect } from "react";
+import Dashboard from "./Views/Dashboard";
+const App = () => {
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
 
-export default App
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  };
+  return (
+    <>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
+      </Router>
+    </>
+  );
+};
+
+export default App;
