@@ -15,6 +15,7 @@ import FasilitasFilkom from "./Views/FasilitasFilkom";
 import ClassF from "./Views/ClassF";
 import Berita from "./Views/Berita";
 import BeritaLengkap from "./Views/BeritaLengkap";
+import Penerjemah from "./Views/Penerjemah";
 const App = () => {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -43,6 +44,7 @@ const App = () => {
             path="/layanan/fakultas/filkom/class-gedung-f"
             element={<ClassF />}
           />
+          <Route path="/penerjemah" element={<Penerjemah />} />
         </Routes>
         <Footer />
       </Router>
