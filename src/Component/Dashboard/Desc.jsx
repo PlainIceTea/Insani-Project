@@ -1,7 +1,9 @@
 const Desc = () => {
   return (
     <>
-      <div></div>
+      <div className="container flex">
+
+      </div>
     </>
   );
 };
