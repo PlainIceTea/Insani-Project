@@ -3,9 +3,11 @@ import value2 from "../../assets/images/value2.png";
 import value3 from "../../assets/images/value3.png";
 const Value = () => {
   return (
-    <div className="md:flex py-20 px-5 w-10/12 mx-auto">
+    <div className="md:flex py-10 px-5 w-10/12 mx-auto">
       <div className="flex-row self-center  ">
-        <div className="text-3xl font-bold w-fit mx-auto md:mx-0 md:w-full">Value Website</div>
+        <div className="text-3xl font-bold w-fit mx-auto md:mx-0 md:w-full">
+          Value Website
+        </div>
         <div className="w-6/12 mx-auto md:mx-0  text-center md:text-justify">
           nilai-nilai yang selalu dipegang teguh untuk memberikan manfaat dan
           pengalaman yang optimal kepada pengguna
@@ -30,7 +32,9 @@ const Value = () => {
           <div class="">
             <h1 class="text-xl font-medium ">Aksesibilitas</h1>
             <p class="text-sm">
-            Aksesibilitas adalah nilai utama INSAN, yang berfokus pada memastikan bahwa semua orang dapat mengakses informasi dan layanan yang disediakan
+              Aksesibilitas adalah nilai utama INSAN, yang berfokus pada
+              memastikan bahwa semua orang dapat mengakses informasi dan layanan
+              yang disediakan
             </p>
             <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs">
               Baca Selengkapnya
@@ -42,7 +46,9 @@ const Value = () => {
           <div class="">
             <h1 class="text-xl font-medium ">Empowerment</h1>
             <p class="text-sm">
-            INSAN berupaya untuk memberdayakan penyandang disabilitas dengan menyediakan informasi, dukungan, dan bimbingan yang mereka butuhkan.
+              INSAN berupaya untuk memberdayakan penyandang disabilitas dengan
+              menyediakan informasi, dukungan, dan bimbingan yang mereka
+              butuhkan.
             </p>
             <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs">
               Baca Selengkapnya

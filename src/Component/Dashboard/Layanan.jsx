@@ -23,7 +23,7 @@ const data = [
 const Layanan = () => {
   return (
     <>
-      <div className="w-full py-20 font-montserrat">
+      <div className="w-full py-10 font-montserrat">
         <div className="text-3xl font-bold w-fit mx-auto">Layanan Kami</div>
         <div className="w-fit mx-auto my-5 font-medium">
           Temukan bagaimana kami dapat mendukung Anda
@@ -36,7 +36,7 @@ const Layanan = () => {
                 <div className="w-fit mx-auto font-medium my-2">
                   {item.header}
                 </div>
-                <div className="w-fit mx-auto text-center">{item.text}</div>
+                <div className=" text-center w-11/12 mx-auto">{item.text}</div>
               </div>
             </div>
           ))}

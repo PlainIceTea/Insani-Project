@@ -4,7 +4,7 @@ const Desc = () => {
   return (
     <>
       <div className="w-full">
-        <div className="w-9/12 mx-auto flex font-montserrat justify-between py-20">
+        <div className="w-9/12 mx-auto flex font-montserrat justify-between py-10">
           <img src={logo} alt="" />
           <div className="w-8/12">
             <div className="text-3xl font-bold">Apa itu INSAN?</div>
