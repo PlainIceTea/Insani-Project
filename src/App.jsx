@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import { useEffect } from "react";
 import Dashboard from "./Views/Dashboard";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 const App = () => {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -18,9 +20,11 @@ const App = () => {
     <>
       <Router>
         <ScrollToTop />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
         </Routes>
+    <Footer />
       </Router>
     </>
   );

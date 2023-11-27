@@ -1,5 +1,5 @@
 import logo from './assets/images/logo.png';
-const footer = () => {
+const Footer = () => {
     return ( 
         <footer className="footer p-10 bg-primary  text-white">
         <aside>
@@ -28,4 +28,4 @@ const footer = () => {
      );
 }
  
-export default footer;
+export default Footer;
