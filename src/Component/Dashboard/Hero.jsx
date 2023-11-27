@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <div
         style={{ backgroundImage: `url(${background})` }}
-        className="w-full py-20 bg-fixed font-montserrat"
+        className="w-full py-20 bg-fixed font-montserrat bg-cover"
       >
         <div className="w-fit mx-auto text-5xl text-white font-bold">
           Selamat Datang di Insan!
