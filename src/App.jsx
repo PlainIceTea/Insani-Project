@@ -16,6 +16,11 @@ import ClassF from "./Views/ClassF";
 import Berita from "./Views/Berita";
 import BeritaLengkap from "./Views/BeritaLengkap";
 import Penerjemah from "./Views/Penerjemah";
+import PenerjemahanHasil from "./Views/PenerjemahanHasil";
+import Rute from "./Views/Rute";
+import RuteHasil from "./Views/RuteHasil";
+import Popup from "./Component/Dashboard/popup";
+import NavFixed from "./NavFixed";
 const App = () => {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -29,6 +34,8 @@ const App = () => {
       <Router>
         <ScrollToTop />
         <Navbar />
+        <NavFixed />
+        <Popup />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/berita" element={<Berita />} />
@@ -45,6 +52,9 @@ const App = () => {
             element={<ClassF />}
           />
           <Route path="/penerjemah" element={<Penerjemah />} />
+          <Route path="/penerjemah/hasil" element={<PenerjemahanHasil />} />
+          <Route path="/rute" element={<Rute />} />
+          <Route path="/rute/hasil" element={<RuteHasil/> } />
         </Routes>
         <Footer />
       </Router>

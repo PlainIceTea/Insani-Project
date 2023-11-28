@@ -2,6 +2,7 @@ import berita1 from "../../assets/images/berita1.png";
 import berita2 from "../../assets/images/berita2.png";
 import berita3 from "../../assets/images/berita3.png";
 import berita4 from "../../assets/images/berita4.png";
+import { Link } from 'react-router-dom'; 
 const data = [
   {
     gambar: berita1,
@@ -32,15 +33,16 @@ const data = [
 const Berita = () => {
   return (
     <div>
-        <div className="w-10/12 mx-auto ">
+        <div className="w-10/12 mx-auto font-montserrat ">
         <div className="text-3xl font-bold">Berita Terbaru</div>
         <div className="py-2">Berita terkini seputar Universitas Brawijaya dan Disabilitas</div>
         </div>
     <div className="w-10/12 py-10 flex flex-wrap mx-auto">
         
       {data.map((item, i) => (
-        <div className="w-6/12 my-5 mx-auto" key={i}>
-          <div className="w-11/12 border py-5 px-2 rounded-xl flex mx-auto">
+        <div className="w-6/12 my-5 mx-auto " key={i}>
+            <Link to='/berita' >
+          <div className="w-11/12 border py-5 px-2 rounded-xl flex mx-auto hover:bg-primary hover:text-white hover:scale-110 hover:shadow-md duration-200 group">
             <img
               src={item.gambar}
               alt=""
@@ -50,11 +52,12 @@ const Berita = () => {
               <div class="text-xl font-medium ">{item.header}</div>
               <div>{item.tanggal}</div>
               <div class="text-sm">{item.text}</div>
-              <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs">
+              <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs group-hover:bg-white group-hover:text-black duration-200">
                 Baca Selengkapnya
               </button>
             </div>
           </div>
+          </Link>
         </div>
       ))}
     </div>

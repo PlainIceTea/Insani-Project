@@ -1,7 +1,7 @@
 import logo from "./assets/images/logo.png";
 const Navbar = () => {
   return (
-    <div className="navbar bg-primary text-white">
+    <div className="navbar bg-primary text-white fixed">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,64 +22,70 @@ const Navbar = () => {
           </div>
           <ul className="text-black menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li>
-              <a>Beranda</a>
+              <a href="/">Beranda</a>
             </li>
             <li>
-              <a>Tentang</a>
+              <a href="/#/tentang">Tentang</a>
             </li>
             <li>
-              <a>Layanan</a>
+              <a href="/#/layanan">Layanan</a>
               <ul className="p-2 text-black">
                 <li>
-                  <a>Informasi Fasilitas</a>
+                  <a href="/#/layanan">Fitur layanan</a>
                 </li>
                 <li>
-                  <a>Rute Fasilitas</a>
+                  <a href="/#/layanan/fakultas">Informasi Fasilitas</a>
                 </li>
                 <li>
-                    <a>Fasilitas Penerjemah</a>
+                  <a href="/#/rute">Rute Fasilitas</a>
+                </li>
+                <li>
+                  <a href="/#/penerjemah">Fasilitas Penerjemah</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Berita</a>
+              <a href="/#/berita">Berita</a>
             </li>
           </ul>
         </div>
-        <img src={logo} className="h-10" />
+        <a href="/">
+          <img src={logo} className="h-10" alt="Logo" />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Beranda</a>
+            <a href="/">Beranda</a>
           </li>
           <li>
-            <a>Tentang</a>
+            <a href="/#/tentang">Tentang</a>
           </li>
           <li>
             <details>
               <summary>Layanan</summary>
               <ul className="p-2 text-black">
               <li>
-                  <a>Informasi Fasilitas</a>
+                  <a href="/#/layanan">Fitur layanan</a>
                 </li>
                 <li>
-                  <a>Rute Fasilitas</a>
+                  <a href="/#/layanan/fakultas">Informasi Fasilitas</a>
                 </li>
                 <li>
-                    <a>Fasilitas Penerjemah</a>
+                  <a href="/#/rute">Rute Fasilitas</a>
+                </li>
+                <li>
+                  <a href="/#/penerjemah">Fasilitas Penerjemah</a>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a>Berita</a>
+            <a href="/#/berita">Berita</a>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-
-      </div>
+      <div className="navbar-end"></div>
     </div>
   );
 };

@@ -20,9 +20,9 @@ const Footer = () => {
         </nav> 
         <nav>
           <header className="footer-title">Hubungi kami</header> 
-          <a className="link link-hover">Alamat : Jalan Veteran Malang</a>
-          <a className="link link-hover">Telepon : (+62)341 - 234567</a>
-          <a className="link link-hover">Email: insan@gmail.com</a>
+          <div className="">Alamat : Jalan Veteran Malang</div>
+          <div className="">Telepon : (+62)341 - 234567</div>
+          <div className="">Email: insan@gmail.com</div>
         </nav>
       </footer>
      );

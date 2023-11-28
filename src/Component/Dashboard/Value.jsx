@@ -1,9 +1,10 @@
 import value1 from "../../assets/images/value1.png";
 import value2 from "../../assets/images/value2.png";
 import value3 from "../../assets/images/value3.png";
+import { Link } from 'react-router-dom'; 
 const Value = () => {
   return (
-    <div className="md:flex py-10 px-5 w-10/12 mx-auto">
+    <div className="md:flex py-10 px-5 w-10/12 mx-auto font-montserrat">
       <div className="flex-row self-center  ">
         <div className="text-3xl font-bold w-fit mx-auto md:mx-0 md:w-full">
           Value Website
@@ -22,9 +23,11 @@ const Value = () => {
               Website INSAN menekankan pentingnya inklusi, yaitu menciptakan
               lingkungan yang ramah dan mendukung bagi semua
             </p>
-            <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs">
+            <Link to='/tentang'>
+            <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs hover:bg-orange-300 active:bg-orange-500 duration-200">
               Baca Selengkapnya
             </button>
+            </Link>
           </div>
         </div>
         <div class="container flex box shadow pl-5 pr-5 py-5 max-w-xl m-5">
@@ -36,9 +39,11 @@ const Value = () => {
               memastikan bahwa semua orang dapat mengakses informasi dan layanan
               yang disediakan
             </p>
-            <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs">
+            <Link to='/tentang'>
+            <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs hover:bg-orange-300 active:bg-orange-500 duration-200">
               Baca Selengkapnya
             </button>
+            </Link>
           </div>
         </div>
         <div class="container flex box shadow pl-5 pr-5 py-5 max-w-xl m-5">
@@ -50,9 +55,11 @@ const Value = () => {
               menyediakan informasi, dukungan, dan bimbingan yang mereka
               butuhkan.
             </p>
-            <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs">
+            <Link to='/tentang'>
+            <button class="py-1 px-2 shadow bg-orange-200 mt-3 rounded-md text-xs hover:bg-orange-300 active:bg-orange-500 duration-200">
               Baca Selengkapnya
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { ArrowLeft } from "react-feather";
+import { Link } from 'react-router-dom'; 
 import gambar from "../assets/images/beritaLengkap.png";
 
 const BeritaLengkap = () => {
@@ -6,7 +7,9 @@ const BeritaLengkap = () => {
     <>
       <div className="py-10 w-full font-montserrat">
         <div className="w-10/12 mx-auto">
+          <Link to='/berita'>
           <ArrowLeft size="30px" />
+          </Link>
         </div>
         <img src={gambar} alt="" className="my-5" />
         <div className="w-10/12 mx-auto">

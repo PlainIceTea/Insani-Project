@@ -1,8 +1,8 @@
 import rekam1 from "../assets/images/rekam1.png";
 import pause from "../assets/images/pause.png";
 import stop from "../assets/images/stop.png";
-import { Link } from 'react-router-dom';
-const Penerjemah = () => {
+import { Link } from "react-router-dom";
+const PenerjemahanHasil = () => {
   return (
     <div>
       <div className="w-10/12 mx-auto py-10">
@@ -33,27 +33,24 @@ const Penerjemah = () => {
       </div>
       <div className="bg-secondary p-5 mx-auto rounded-lg">
         <div className="w-10/12 bg-white h-80 p-10 m-5 rounded-lg mx-auto ">
-          <div className="text-xl font-bold">Terjemahan rekaman suaramu.</div>
+          <div className="text-xl font-bold">Hasil dari rekaman suaramu.</div>
           <div>
-            Model interaksi ini membantu kita untuk memahami apa yang terjadi di
-            dalam interaksi antara pengguna dan sistem, menerjemahkan tujuan,
-            antara apa yang diinginkan ...
+          Model interaksi ini membantu kita untuk memahami apa yang terjadi di dalam interaksi antara pengguna dan sistem, menerjemahkan tujuan, antara apa yang diinginkan user dan dikerjakan sistem.
           </div>
         </div>
-        <div className="ml-auto flex w-11/12">
+        <>
+        <Link to='/' className="ml-auto flex w-11/12">
+        
+          <button class="ml-auto px-5 py-3 bg-white font-medium text-primary rounded-xl m-5 border border-primary  hover:bg-primary hover:text-white  duration-200">
+            Export
+          </button>
 
-          <button class="ml-auto  px-5 py-3 bg-primary font-medium text-white rounded-xl m-5 border border-primary  hover:bg-white hover:text-primary duration-200">
-            Edit
-          </button>
-<Link to='/penerjemah/hasil'>
-          <button class="px-5 py-3 bg-white font-medium text-primary rounded-xl m-5 border border-primary  hover:bg-primary hover:text-white  duration-200">
-            Simpan
-          </button>
-          </Link>          
-        </div>
+          
+        </Link>
+        </>
       </div>
     </div>
   );
 };
 
-export default Penerjemah;
+export default PenerjemahanHasil;

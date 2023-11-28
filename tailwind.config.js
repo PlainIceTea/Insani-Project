@@ -9,7 +9,9 @@ export default {
       },
       colors: {
         primary: "#143761",
-        secondary:"#CFE8F7",
+        secondary: "#CFE8F7",
+        onered: "#C52026",
+        oneyellow: "#FFD466",
       },
     },
   },
